@@ -6,7 +6,7 @@ Calculates gross and net income using FICA and federal tax bracket
 ## Installation
 
 To install paycheck_calculator download the dist folder. Open the application in the dist folder.
-Keep all files to keep the executable working properly.
+Keep all files to keep the executable working properly. Only works on Windows OS
 
 ## License
 
