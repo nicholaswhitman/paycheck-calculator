@@ -1,5 +1,5 @@
 # paycheck calculator
-# Nicholas 
+# Nicholas W
 # 20 May 2023
 
 medicare = .0145 					# 1.45%
@@ -13,9 +13,6 @@ taxBracket5 = .32                   # 32%
 taxBracket6 = .35                   # 35%
 taxBracket7 = .37                   # 37% 
 
-# impliment State and city taxes \\ last implimentation
-# prevent string input 
-# turn it into object oriented programming
 grossWeekly = grossAnnual = 0.0
 cont = True
 
