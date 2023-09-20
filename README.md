@@ -5,14 +5,14 @@ Calculates gross and net income using FICA and federal tax bracket
 
 ## Installation
 
-To install paycheck_calculator download the dist folder. Open the application in the dist folder.
+Use pyinstaller on the .py file or paycheck_calculator download the dist folder. Open the application in the dist folder.
 Keep all files to keep the executable working properly. Only works on Windows OS
 
 ## License
 
 No license
 
-
+## output example
 ![image](https://github.com/nicholaswhitman/paycheck_calculator/assets/145265217/8ea084a6-5ab3-49f4-a195-12415e564055)
 
 
