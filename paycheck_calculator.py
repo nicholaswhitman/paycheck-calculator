@@ -24,14 +24,16 @@ def main():
 		userJobs = int(input("How many jobs do you have? "))
 	
 		for i in range(0, userJobs, 1):
-			grossHourly = float(input("What is your hourly pay? "))
-			hoursPerWeek = float(input("How many hours a week do you work? "))
+			grossHourly   = float(input("What is your hourly pay? "))
+			hoursPerWeek  = float(input("How many hours a week do you work? "))
+			hoursOvertime =  float(input("How many overtime hours? "))
+			overtime = (grossHourly * 1.5) * hoursOvertime
 
-			tempGrossWeekly = grossHourly * hoursPerWeek
-			tempGrossAnnual = grossHourly * hoursPerWeek * 52
+			tempGrossWeekly = grossHourly * hoursPerWeek + overtime
+			tempGrossAnnual = ((grossHourly * hoursPerWeek) + overtime) * 52 
 
 			grossWeekly += tempGrossWeekly
-			grossAnnual += tempGrossAnnual
+			grossAnnual += tempGrossAnnual 
 
 			print("Weekly gross income for job",i+1, f": {tempGrossWeekly:,}")
 			print("Annual gross income for job",i+1, f": {tempGrossAnnual:,}")
@@ -120,7 +122,7 @@ def main():
 
 
 
-
+#print function that puts commas 
 def output(userJobs, netWeekly, netAnnual):
 	if userJobs == 1:
 		print(f"Weekly net income: {netWeekly:,}")
@@ -128,11 +130,6 @@ def output(userJobs, netWeekly, netAnnual):
 	else: 
 		print(f"Total Weekly net income:  {netWeekly:,}")
 		print(f"Total Annual net income:  {netAnnual:,}")
-
-
-
-
-
 
 
 
